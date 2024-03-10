@@ -29,6 +29,7 @@ export default {
 
 <style scoped>
 .product-item {
+  padding: 15px;
   border: 1px solid;
   display: flex;
   justify-content: center;
@@ -45,4 +46,6 @@ export default {
   justify-content: space-around;
   align-items: center;
 }
+
+
 </style>

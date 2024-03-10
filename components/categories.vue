@@ -21,7 +21,7 @@ export default {
   setup (props: any, {emit}: any) {
     const items = ref<any>([])
 
-    fetch('http://127.0.0.1:3000/categories.json')
+    fetch('/categories.json')
         .then((response) => {
           console.log(response)
           return response.json()
@@ -52,11 +52,11 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  flex-flow: row wrap;
+  padding: 15px 0;
 }
 .categories-item {
   //border: 1px solid red;
-
 }
 .categories-item-text{
   font-size: 17px;
